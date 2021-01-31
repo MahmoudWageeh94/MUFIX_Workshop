@@ -1,0 +1,10 @@
+
+.parent{
+    display: flex;
+}
+.parent .child{
+    background-color: #eeeeee;
+    height: 500px;
+    margin: 0 15px;
+    padding: 20px;
+}

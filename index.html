@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,47 +8,68 @@
     <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
-    <div class="container">
-       <div class="row">
-            <div class="col-4">
-                <div class="box">
-                    1
+    <!--Navbar block-->
+    <nav class="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <ul class="navbar-list">
+                        <li class="navbar-list_item"><a href="#">تصفح القائمة</a></li>
+                        <li class="navbar-list_item">
+                            <form>
+                                <div class="form-control">
+                                    <input type="email" class="form-input" placeholder="ابحث عن الكتاب" name="book_name"/>
+                                    <button class="submit-btn" type="submit"><img src="img/search.svg" alt="search icon"/></button>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <div class="text-box">
+                        <span class="big-text">books</span>
+                        <span class="small-text">read</span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <ul class="navbar-list">
+                        <li class="navbar-list_item"><a href="#"><img class="cart-icon" src="img/shopping-cart.svg" alt="cart icon"/>سلة المشتريات</a></li>
+                        <li class="navbar-list_item"><img class="profile-img" src="img/profile-img.svg" alt="profile img"/>اسم المستخدم</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="box">1</div>
+        </div>
+    </nav>
+    <!--Categories section-->
+    <section class="categories">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <a href="#" class="category-box">
+                        <h3 class="category-box_title">الأدب والخيال</h3>
+                        <img class="category-box_icon" src="img/category-icon.svg" alt="icon name"/>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="category-box">
+                        <h3 class="category-box_title">الأدب والخيال</h3>
+                        <img class="category-box_icon" src="img/category-icon.svg" alt="icon name"/>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="category-box">
+                        <h3 class="category-box_title">الأدب والخيال</h3>
+                        <img class="category-box_icon" src="img/category-icon.svg" alt="icon name"/>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="category-box">
+                        <h3 class="category-box_title">الأدب والخيال</h3>
+                        <img class="category-box_icon" src="img/category-icon.svg" alt="icon name"/>
+                    </a>
+                </div>
             </div>
-            <div class="col-4">
-                <div class="box">1</div>
-            </div>
-            <div class="col-3">
-                <div class="box">1</div>
-            </div>
-            <div class="col-3">
-                <div class="box">1</div>
-            </div>
-            <div class="col-3">
-                <div class="box">1</div>
-            </div>
-            <div class="col-3">
-                <div class="box">1</div>
-            </div>
-            <div class="col-12">
-                <div class="box">1</div>
-            </div>
-            <div class="col-6">
-                <div class="box">1</div>
-            </div>
-            <div class="col-6">
-                <div class="box">1</div>
-            </div>
-            <div class="col-6">
-                <div class="box">1</div>
-            </div>
-            <div class="col-6">
-                <div class="box">1</div>
-            </div>
-       </div>
-    </div>
+        </div>
+    </section>
 </body>
 </html>

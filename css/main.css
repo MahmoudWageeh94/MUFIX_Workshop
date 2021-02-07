@@ -5,6 +5,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+  direction: rtl;
+  background-color: #F2F5F7;
+}
 h1,
 h2,
 h3,
@@ -46,11 +50,7 @@ h6{
     padding-left: 8px;
     padding-right: 8px;
 }
-.box{
-    background-color: blue;
-    height: 200px;
-    margin-bottom: 16px;
-}
+
 .col-1 {
   -ms-flex: 0 0 8.333333%;
   flex: 0 0 8.333333%;
@@ -110,4 +110,146 @@ h6{
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
+}
+/*******************************************/
+.navbar{
+  height: 80px;
+  background-color: #fff;
+}
+.navbar .navbar-list{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 80px;
+}
+.navbar-list  .navbar-list_item{
+  color: #707070;
+  font-size: 15px;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+}
+.navbar-list  .navbar-list_item a{
+  color: #707070;
+  font-size: 15px;
+  font-weight: 200;
+  text-decoration: none;
+  margin-left: 15px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+.navbar-list  .navbar-list_item a:hover{
+  color: red;
+}
+.form-control{
+  position: relative;
+}
+.form-control .form-input{
+  border: 1px solid #707070;
+  height: 30px;
+  padding-right: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  border-radius: 5px;
+}
+.form-control .form-input::placeholder{
+  font-size: 12px;
+  font-weight: 300;
+  color: #707070;
+}
+.form-control .form-input:focus{
+  outline: none;
+}
+.form-control .submit-btn{
+  position: absolute;
+  top: 0;
+  left: 5px;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.form-control .submit-btn img{
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+.text-box{
+  text-align: center;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-box .small-text{
+  font-size: 14px;
+  color: #707070;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.text-box .big-text{
+  font-size: 16px;
+  color: #707070;
+  font-weight: 700;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.navbar-list  .navbar-list_item a .cart-icon{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-left: 4px;
+}
+.navbar-list  .navbar-list_item .profile-img{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-left: 4px;
+}
+/*** start categories section***/
+a{
+  text-decoration: none;
+}
+.categories{
+  margin-top: 40px;
+}
+.categories .category-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  background-color: #5DABBA;
+  position: relative;
+  border-radius: 18px;
+}
+
+.categories .row:first-child .category-box{
+  background-color: #5DABBA;
+}
+.categories .row:nth-child(2) .category-box{
+  background-color: #E4ABCB;
+}
+.categories .category-box:nth-of-type(3){
+  background-color: #4EAA60;
+}
+.categories .category-box:last-of-type{
+  background-color: #F18E91;
+}
+.categories .category-box .category-box_title{
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+.categories .category-box .category-box_icon{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 150px;
+  width: 100px;
+  object-fit: cover;
 }
